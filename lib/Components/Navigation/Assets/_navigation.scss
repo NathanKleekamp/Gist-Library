@@ -1,0 +1,30 @@
+$text: #feffff;
+$bg: #2a2d34;
+
+.primary-nav {
+  color: $text;
+  font-family: 'Roboto Condensed', Roboto, sans-serif;
+
+  a {
+    color: $text;
+    text-decoration: none;
+  }
+
+  nav {
+    background-color: $bg;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1em;
+  }
+
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+}

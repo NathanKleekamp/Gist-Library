@@ -1,0 +1,36 @@
+$HEIGHT: 50px;
+
+.filter-component {
+  align-items: flex-start;
+  background-color: $white;
+  border: $border;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1em;
+  padding: 1em;
+
+  .filter-input {
+    border: $border;
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em;
+    height: $HEIGHT;
+    padding: 1px 1em;
+    margin-right: 1em;
+    width: 33vw;
+  }
+
+  .filter-select-wrapper {
+    background-color: #ffffff;
+    border: $border;
+    margin-right: 1em;
+  }
+
+  .filter-select {
+    font-family: 'Roboto', sans-serif;
+    height: $HEIGHT;
+  }
+
+  .custom-select select:focus {
+    border: $border;
+  }
+}

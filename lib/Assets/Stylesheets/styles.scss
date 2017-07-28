@@ -1,0 +1,23 @@
+// Globals
+@import 'variables';
+@import 'normalize';
+@import 'accessibility';
+@import 'forms';
+
+body {
+  background-color: $gray;
+  font-family: Roboto, sans-serif;
+}
+
+.button {
+  background-color: $accent;
+  border-radius: 3px;
+  color: $white;
+  line-height: 1em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+// Components
+@import '../../Components/Navigation/Assets/navigation';
+@import '../../Components/Filter/Assets/filter';
