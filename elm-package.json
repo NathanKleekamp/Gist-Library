@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "An application to organize Github Gists",
-    "repository": "https://github.com/NathanKleekamp/Gist-Library",
+    "repository": "https://github.com/nathankleekamp/gist-library.git",
     "license": "MIT",
     "source-directories": [
         "."
