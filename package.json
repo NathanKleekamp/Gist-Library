@@ -4,12 +4,12 @@
   "description": "An application to organize Github Gists",
   "main": "index.js",
   "scripts": {
-    "elm-live": "elm-live --output=dist/elm.js --open",
+    "elm-live": "elm-live lib/Main.elm --output=dist/elm.js --open",
     "sass": "node-sass --output-style compressed -o 'dist' 'assets/css/styles.scss'",
     "autoprefixer": "postcss dist/styles.css -r -m -u autoprefixer --autoprefixer.browsers '> 1%'",
     "css": "npm run sass && npm run autoprefixer",
     "imagemin": "imagemin assets/images/* dist/images",
-    "prod": "elm-make Main.elm --output=dist/elm.js"
+    "prod": "elm-make lib/Main.elm --output=dist/elm.js"
   },
   "author": "Nathan Kleekamp",
   "license": "MIT",
