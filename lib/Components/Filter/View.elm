@@ -1,9 +1,9 @@
 module Components.Filter.View exposing (view)
 
-import Html exposing (div, label, input, select, option, p, a, text)
-import Html.Attributes exposing (id, class, href, for, name, placeholder, value)
+import Html exposing (Html, div, label, input, select, option, p, a, text)
+import Html.Attributes exposing (id, class, for, name, placeholder, value)
 
-view : Html.Html msg
+view : Html msg
 view =
   div
     [ class "filter-component" ]
@@ -14,7 +14,7 @@ view =
       [ text "Filter Gists" ]
     , input
       [ id "filter"
-      , class "filter-input"
+      , class "filter-input form-input"
       , name "filter"
       , placeholder "Filter Gists"
       ]
@@ -23,26 +23,24 @@ view =
       [ for "filter-select"
       , class "visually-hidden"
       ]
-      [ text "Filter by File Type" ]
+      [ text "Filter by Language" ]
     , div
       [ class "custom-select filter-select-wrapper" ]
       [
       select
         [ class "filter-select" ]
         [ option
-          [ value "dunno" ]
-          [ text "Dunno" ]
+          [ value "default" ]
+          [ text "Filter By Language" ]
         , option
-          [ value "something" ]
-          [ text "Some really long text" ]
+          [ value "javascript" ]
+          [ text "JavaScript" ]
+        , option
+          [ value "bash" ]
+          [ text "Bash" ]
         ]
       ]
-    , p
-      []
-      [ a
-        [ class "button"
-        , href "#"
-        ]
-        [ text "Filter Gists" ]
-      ]
+    , a
+      [ class "button" ]
+      [ text "Filter Gists" ]
     ]

@@ -2,19 +2,19 @@ $HEIGHT: 50px;
 
 .filter-component {
   align-items: flex-start;
-  background-color: $white;
+  background-color: $gray;
   border: $border;
   display: flex;
   justify-content: center;
   margin: 2em 0 1em;
   padding: 1em;
 
+  .button {
+    align-self: center;
+  }
+
   .filter-input {
-    border: $border;
-    font-family: Roboto, sans-serif;
-    font-size: 1.5em;
     height: $HEIGHT;
-    padding: 1px 1em;
     margin-right: 1em;
     width: 33vw;
   }
@@ -22,12 +22,15 @@ $HEIGHT: 50px;
   .filter-select-wrapper {
     background-color: #ffffff;
     border: $border;
+    height: $HEIGHT;
     margin-right: 1em;
+    padding: 1px;
   }
 
   .filter-select {
     font-family: 'Roboto', sans-serif;
     height: $HEIGHT;
+    padding-top: 0.25em;
   }
 
   .custom-select select:focus {

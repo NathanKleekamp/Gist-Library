@@ -141,3 +141,10 @@
 		display: block;
 	}
 }
+
+.form-input {
+  border: $border;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5em;
+  padding: 1px 1em;
+}
