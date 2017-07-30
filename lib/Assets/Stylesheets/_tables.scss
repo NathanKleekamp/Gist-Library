@@ -1,0 +1,19 @@
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 1em 0;
+  text-align: left;
+}
+
+td {
+  border-bottom: $border;
+  padding: 1.25em 0;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right;
+}

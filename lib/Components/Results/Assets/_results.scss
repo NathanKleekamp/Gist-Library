@@ -1,0 +1,24 @@
+.results-component {
+  .results-table {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .results-table-heading th {
+    border-bottom: $border;
+    font-family: 'Roboto Condensed', Roboto, sans-serf;
+    text-transform: uppercase;
+  }
+
+  .results-table-heading th {
+    width: 25%;
+  }
+
+  .results-table-heading th:nth-child(2) {
+    width: 65%;
+  }
+
+  .results-table-heading th:last-child {
+    width: 10%;
+  }
+}
